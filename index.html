@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Styling</title>
+    <style>
+        body {
+  background: linear-gradient(to right, rgb(226, 52, 226), pink);
+}
+
+        h1 {
+            font-family: 'camberia';  
+            font-size: 60px;                      
+            color: #0b070c;                     
+            text-align: center;                   
+            font-weight: bold;
+            background-color: rgb(231, 76, 161);
+            background-size: 50%;                    
+        }
+        p {
+            font-family: "Lucida Console", "Courier New", monospace;  
+            font-size: 24px;                        
+            color: #1b191a;                       
+            text-align: justify;                    
+            line-height: 1.5;                     
+        }
+        div {
+            width: 200px;
+            height: 100px; 
+            padding: 20px; 
+            border: 5px solid rgb(3, 52, 61); 
+            margin: 30px; 
+            background-color: lightblue; 
+}
+a:link {
+  color: #021929; 
+  text-decoration: none; 
+  font-weight: normal; 
+}
+a:visited {
+  color: #2e0041; 
+  text-decoration: none;
+  font-weight: normal; 
+}
+a:hover {
+  color: #d34085; 
+  text-decoration: underline; 
+  font-weight: bold; 
+}
+a:active {
+  color: #2ecc71; 
+  text-decoration: none; 
+}
+.styled-button {
+    background-color: #46aedf; 
+    color: rgb(10, 2, 2);              
+    border: rgb(1, 52, 70);              
+    padding: 15px 32px;        
+    text-align: center;        
+    text-decoration: rgb(161, 161, 77);     
+    display: inline-flexbox;     
+    font-size: 16px;           
+    margin: 10px;             
+    border-radius: 8px;        
+        cursor: pointer;         
+    transition: background-color 0.3s, transform 0.1s; 
+}
+input[type=text] {
+    background-color: rgb(233, 141, 176);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(52, 175, 89, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=tel] {
+    background-color: rgb(233, 141, 176);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(52, 175, 89, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=date] {
+    background-color: rgb(233, 141, 176);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(52, 175, 89, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=email] {
+    background-color: rgb(233, 141, 176);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(52, 175, 89, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=password] {
+    background-color: rgb(233, 141, 176);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(52, 175, 89, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+input[type=tel]:focus {
+  background-color: lightblue;
+}
+input[type=email]:focus {
+  background-color: lightblue;
+}
+input[type=password]:focus {
+  background-color: lightblue;
+}
+input[type=date]:focus {
+  background-color: lightblue;
+}
+    </style>
+</head>
+<body>
+<h3><i>CSS Assignment No:01</i></h3>
+    <h1><u>Welcome to My Page</u></h1>
+    <fieldset>
+    <p>I am currently in a <b><u>mangerial level</u></b> majoring in CMA at <b>ICMA</b>(Institute of cost and management Accounting).<br>
+        I have a strong interest in <i>Finance and Accounting</i>, and I am eager to deepen my knowledge and skills in this area.</p>
+    </fieldset>
+<br>
+    <fieldset>
+        <h3><i>CSS Assignment No:02</i></h3>
+  <div>  </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <h3><i>CSS Assignment No:03</i></h3> 
+        <h1>Anchor Tag Styling</h1>
+        <p>Click the link below to see the different states:</p>
+        <a href="https://en.wikipedia.org">Visit Example</a>
+  </fieldset>
+  <br>
+  <fieldset>
+    <h3><i>CSS Assignment No:04</i></h3>
+    <h1>style Buttons</h1>
+        <button class="styled-button">Click Me</button>
+        <button class="styled-button">Submit</button>
+        <button class="styled-button">Learn More</button>
+  </fieldset><br>
+<fieldset>
+    <h3><i>CSS Assignment No:05</i></h3>
+    <h1>Information Form</h1>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="John">
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" value="Doe">
+      <label for="phone">Student's phone number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+92 000-0000000" pattern="{+92}{3}[0-9][0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required>
+      <label for="CNIC">Student's CNIC:</label>
+      <input type="tel" id="CNIC" name="Student's CNIC" placeholder="00000-0000000-0"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <label for="Religion">Religion:</label>
+      <input type="text" id="religion" name="Religion" value="">
+      <label for="Caste">Caste:</label>
+      <input type="text" id="Caste" caste="Caste" value="">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <h3>Upload a Photo</h3>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+          <label for="photo">Choose a photo to upload:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" required>
+          <br><br>
+          <input type="submit" value="Upload Photo">    
+      <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+</fieldset>
+</body>
+</html>
